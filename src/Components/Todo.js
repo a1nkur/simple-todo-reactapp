@@ -4,11 +4,7 @@ import AddTaskForm from "./AddTaskForm";
 
 export default class Todo extends Component {
   state = {
-    todos: [
-      { id: 0, task: "lorem ipsum" },
-      { id: 1, task: "lorem ipsum" },
-      { id: 2, task: "lorem ipsum" },
-    ],
+    todos: [],
   };
 
   deleteTask = id => {
@@ -20,7 +16,7 @@ export default class Todo extends Component {
   };
 
   addTask = newTask => {
-    newTask.id = Math.floor(Math.random() * 99999 + 1);
+    newTask.id = Math.floor(Math.random() * 99999999 + 1);
     const todos = [...this.state.todos, newTask];
     this.setState({ todos: todos });
   };
