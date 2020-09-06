@@ -10,7 +10,7 @@ const Task = ({ todos, deleteTask }) => {
       );
     })
   ) : (
-    <p className="center">No Task available.</p>
+    <p className="center">No task available. How about adding a few?</p>
   );
   return <div className="task collection">{todoList}</div>;
 };
