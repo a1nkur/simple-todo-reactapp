@@ -5,9 +5,12 @@ const TodoList = ({ todos, deleteTodo, toggleShowClearIcon }) => {
     deleteTodo(id);
   };
 
+  // Handle onMouseEnter event
   const handleMouseEnter = id => {
     toggleShowClearIcon(id);
   };
+
+  // Handle onMouseLeave event
   const handleMouseLeave = id => {
     toggleShowClearIcon(id);
   };
@@ -43,4 +46,3 @@ const TodoList = ({ todos, deleteTodo, toggleShowClearIcon }) => {
 };
 
 export default TodoList;
-
